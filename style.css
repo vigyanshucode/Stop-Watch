@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --background-color: #1e4316;
+    --text-color: #fdfdfd;
+    --button-background: #007BFF;
+    --button-hover: #0056b3;
+    --button-text: #fff;
+    --progress-background: #ddd;
+    --progress-color: #007BFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+    /* background-image: url(./background\ image.png);
+    background-size: cover; */
+    
+    
+}
+
+.box{
+   margin-top: 5em;
+   margin-left: 15em;
+}
+.headTopoic{
+    color: rgb(249, 249, 249);
+    font-family: sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    text-wrap: wrap;
+}
+.container{
+    margin-left: 5rem;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff9a1e;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+.stopwatch {
+    font-size: 10rem;
+    margin-bottom: 20px;
+    margin-top: 4rem;
+    color: var(--button-text);
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-left: 10em; */
+    color: var(--button-text);
+    transition: background 0.3s, transform 0.1s;
+}
+
+#startStopBtn{
+    background-color: #2eb401;
+}
+#resetBtn{
+    background-color: #df1c0e;
+}
+#lapBtn{
+    background-color: #0c20ff;
+}
+
+.btn:hover {
+    background: var(--button-hover);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.progress-container {
+    width: 100%;
+    background: var(--progress-background);
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--progress-color);
+    width: 0%;
+    transition: width 0.1s;
+}
+
+.laps {
+    text-align: left;
+}
+
+.laps h2 {
+    margin-bottom: 10px;
+}
+
+#lapsList {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#lapsList li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    color: var(--text-color);
+    transition: background 0.3s;
+}
+
+#lapsList li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+#lapsList li:nth-child(even) {
+    background: #e9e9e9;
+}
+
+footer{
+    color: rgb(22, 102, 8);
+    margin-left: 50%;
+    margin-top: 3em;
+
+}
+
+
+
+@media (max-width : 600px)
+{
+    html{
+        font-size: 0.5em;
+    }
+    .box{
+        margin-top: 50px;
+    }
+    .container{
+        margin: 0px;
+    }
+    .stopwatch {
+        font-size: 10em;
+    }
+}
+
+
+
+
+@media (max-width: 500px)
+{
+    html{
+        font-size: 0.3em;
+    }
+    .box{
+        margin-top: 50px;
+    }
+    .container{
+        margin: 0px 0px 0px 0px;
+    }
+    .stopwatch {
+        font-size: 8em;
+    }
+    
+}
